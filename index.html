@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerador de Fontes Diferentes Online | Letras Estilizadas Grátis</title>
+<meta name="description" content="Gerador de fontes online gratuito. Crie letras diferentes, fontes estilizadas e textos decorados para Instagram, TikTok e Free Fire em segundos.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://fontesdeletras.com.br/">
+<meta name="theme-color" content="#7c3aed">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gerador de Fontes Diferentes Online | Letras Estilizadas Grátis">
+<meta property="og:description" content="Crie letras diferentes e fontes estilizadas grátis para Instagram, TikTok e Free Fire. Copie e cole em um clique.">
+<meta property="og:locale" content="pt_BR">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gerador de Fontes Diferentes Online">
+<meta name="twitter:description" content="Crie letras diferentes e fontes estilizadas grátis. Copie e cole em um clique.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Gerador de Fontes Diferentes",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "BRL"
+  },
+  "description": "Ferramenta online gratuita para gerar fontes diferentes, letras estilizadas e texto decorado para redes sociais."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Como funciona um gerador de fontes diferentes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O gerador converte cada letra do seu texto em caracteres Unicode visualmente parecidos, criando o efeito de uma fonte diferente que pode ser copiada e colada em qualquer lugar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "As fontes diferentes funcionam em qualquer rede social?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, como são caracteres Unicode e não uma fonte instalada, elas funcionam no Instagram, TikTok, Free Fire, WhatsApp e na maioria dos aplicativos e sites."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "É preciso instalar algo para usar fontes diferentes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. Basta digitar o texto, copiar o estilo desejado e colar onde quiser. Nenhuma instalação ou fonte adicional é necessária."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Por que algumas letras diferentes não aparecem corretamente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alguns aplicativos ou sistemas mais antigos podem não suportar certos caracteres Unicode, fazendo com que apareçam como quadrados ou símbolos genéricos."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #0f0a1a;
+    --bg-soft: #160f26;
+    --card: #1c1430;
+    --card-border: #2e2249;
+    --text: #f1edf9;
+    --text-dim: #b3a8cc;
+    --accent: #a855f7;
+    --accent-2: #ec4899;
+    --accent-3: #6366f1;
+    --gradient: linear-gradient(135deg, var(--accent-3), var(--accent), var(--accent-2));
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,0.35);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: -20%;
+    left: -10%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(168,85,247,0.25), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    bottom: -20%;
+    right: -10%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(236,72,153,0.18), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  header.hero {
+    padding: 64px 0 40px;
+    text-align: center;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(168,85,247,0.12);
+    border: 1px solid rgba(168,85,247,0.35);
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 5vw, 44px);
+    line-height: 1.15;
+    margin: 0 0 14px;
+    font-weight: 800;
+  }
+
+  h1 .grad {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .hero p.lead {
+    color: var(--text-dim);
+    font-size: 17px;
+    max-width: 620px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* TOOL CARD */
+  .tool-card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 28px;
+    margin-top: 28px;
+  }
+
+  .input-row label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  #textInput {
+    width: 100%;
+    padding: 16px 18px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid var(--card-border);
+    background: var(--bg-soft);
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  #textInput:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(168,85,247,0.18);
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+
+  .results {
+    margin-top: 26px;
+    display: grid;
+    gap: 12px;
+  }
+
+  .style-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    background: var(--bg-soft);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    transition: border-color 0.15s ease, transform 0.1s ease;
+  }
+
+  .style-item:hover {
+    border-color: rgba(168,85,247,0.4);
+  }
+
+  .style-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .style-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--accent);
+  }
+
+  .style-output {
+    font-size: 17px;
+    word-break: break-word;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  .copy-btn {
+    flex-shrink: 0;
+    border: 1px solid var(--card-border);
+    background: rgba(168,85,247,0.1);
+    color: var(--text);
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s ease, transform 0.08s ease, border-color 0.15s ease;
+  }
+
+  .copy-btn:hover {
+    background: var(--gradient);
+    border-color: transparent;
+  }
+
+  .copy-btn:active { transform: scale(0.96); }
+
+  .copy-btn.copied {
+    background: #16a34a;
+    border-color: transparent;
+  }
+
+  /* TOAST */
+  #toast {
+    position: fixed;
+    bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: #1c1430;
+    border: 1px solid rgba(168,85,247,0.4);
+    color: var(--text);
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 50;
+  }
+
+  #toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  /* CONTENT SECTION */
+  .content-section {
+    margin-top: 64px;
+    padding-bottom: 60px;
+  }
+
+  .content-section h2 {
+    font-size: 24px;
+    margin: 46px 0 14px;
+    font-weight: 750;
+  }
+
+  .content-section h2:first-of-type { margin-top: 0; }
+
+  .content-section p, .content-section li {
+    color: var(--text-dim);
+    line-height: 1.75;
+    font-size: 16px;
+  }
+
+  .content-section ul { padding-left: 20px; }
+  .content-section li { margin-bottom: 6px; }
+
+  .faq-item {
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    background: var(--card);
+  }
+
+  .faq-item h3 {
+    font-size: 16px;
+    margin: 0 0 6px;
+    color: var(--text);
+  }
+
+  .faq-item p { margin: 0; font-size: 15px; }
+
+  footer {
+    text-align: center;
+    padding: 30px 0 50px;
+    color: var(--text-dim);
+    font-size: 13px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 20px;
+  }
+
+  @media (max-width: 600px) {
+    header.hero { padding: 44px 0 28px; }
+    .tool-card { padding: 18px; }
+    .style-item { flex-direction: column; align-items: stretch; }
+    .copy-btn { width: 100%; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <span class="badge">100% Gratuito · Sem Cadastro</span>
+    <h1>Gerador de <span class="grad">Fontes Diferentes</span><br>Online</h1>
+    <p class="lead">Digite seu texto e gere instantaneamente mais de 15 estilos de letras diferentes para copiar e colar no Instagram, TikTok, Free Fire e qualquer lugar.</p>
+  </header>
+
+  <main>
+    <section class="tool-card" aria-label="Gerador de fontes">
+      <div class="input-row">
+        <label for="textInput">Digite seu texto</label>
+        <input
+          type="text"
+          id="textInput"
+          placeholder="Digite aqui para gerar suas fontes..."
+          maxlength="200"
+          autocomplete="off"
+          value="Texto Estilizado"
+        >
+        <div class="meta-row">
+          <span id="charCount">0 / 200 caracteres</span>
+          <span>Atualiza automaticamente</span>
+        </div>
+      </div>
+
+      <div class="results" id="results"></div>
+    </section>
+
+    <section class="content-section">
+
+      <h2>O que são fontes personalizadas?</h2>
+      <p>Fontes personalizadas, no contexto de redes sociais, não são fontes instaladas no sentido tradicional. Em vez disso, são conjuntos de caracteres Unicode que se parecem visualmente com versões em negrito, itálico, cursiva ou decorada do alfabeto comum. Como fazem parte do padrão Unicode, esses caracteres podem ser copiados e colados em praticamente qualquer campo de texto, sem precisar instalar nada no celular ou computador.</p>
+      <p>Essa é a razão pela qual letras diferentes funcionam em legendas do Instagram, bios, comentários, nomes de usuário no TikTok e até em nicknames de jogos como Free Fire: o texto continua sendo texto, apenas usando símbolos visualmente diferentes para representar as mesmas letras.</p>
+
+      <h2>Como usar letras diferentes nas redes sociais</h2>
+      <p>O processo é simples: digite a frase desejada no campo acima, escolha entre os estilos gerados automaticamente e clique no botão de copiar ao lado do estilo escolhido. Depois, basta colar o texto onde quiser — seja na bio, em uma legenda, em uma mensagem ou no nome de um personagem.</p>
+      <ul>
+        <li>Use estilos mais discretos (como versalete ou itálico) para legendas longas, mantendo boa legibilidade.</li>
+        <li>Reserve estilos mais decorativos (bolha, circulado, fraktur) para títulos curtos, nomes ou destaques.</li>
+        <li>Teste como o texto aparece antes de publicar, já que alguns dispositivos renderizam certos caracteres de forma diferente.</li>
+      </ul>
+
+      <h2>Fontes para Instagram</h2>
+      <p>No Instagram, fontes diferentes são usadas principalmente na bio do perfil, em destaques e em legendas para chamar atenção em um feed cheio de conteúdo padrão. Como a bio tem espaço limitado, estilos compactos como versalete ou negrito tendem a funcionar melhor, enquanto legendas mais longas costumam ficar melhores com itálico ou sublinhado, que preservam a leitura natural do texto.</p>
+
+      <h2>Fontes para TikTok</h2>
+      <p>No TikTok, onde nomes de usuário e descrições de vídeo competem por atenção em poucos segundos, fontes estilizadas ajudam o perfil a se destacar visualmente na busca e nos comentários. Como o aplicativo é usado majoritariamente no celular, vale a pena escolher estilos com boa legibilidade em telas pequenas, evitando caracteres muito carregados visualmente.</p>
+
+      <h2>Fontes para Free Fire</h2>
+      <p>Em jogos como Free Fire, nicknames estilizados são uma forma comum de personalização e identidade visual dentro da comunidade. Estilos como negrito, circulado, quadrado e fontes góticas (fraktur) são populares para nicknames, já que se destacam no placar e nos chats do jogo. Vale lembrar que alguns desses caracteres podem não ser suportados em todas as versões do jogo ou em todos os dispositivos.</p>
+
+      <h2>Benefícios da personalização de texto</h2>
+      <p>Além do aspecto estético, personalizar texto com fontes diferentes pode ajudar a reforçar identidade visual em um perfil, destacar informações importantes em uma bio ou simplesmente tornar uma mensagem mais expressiva. Para criadores de conteúdo, um perfil visualmente consistente — incluindo a tipografia usada na bio — pode contribuir para o reconhecimento da marca pessoal ao longo do tempo.</p>
+
+      <h2>Perguntas Frequentes</h2>
+
+      <div class="faq-item">
+        <h3>Como funciona um gerador de fontes diferentes?</h3>
+        <p>O gerador converte cada letra do seu texto em caracteres Unicode visualmente parecidos, criando o efeito de uma fonte diferente que pode ser copiada e colada em qualquer lugar.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>As fontes diferentes funcionam em qualquer rede social?</h3>
+        <p>Sim, como são caracteres Unicode e não uma fonte instalada, elas funcionam no Instagram, TikTok, Free Fire, WhatsApp e na maioria dos aplicativos e sites.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>É preciso instalar algo para usar fontes diferentes?</h3>
+        <p>Não. Basta digitar o texto, copiar o estilo desejado e colar onde quiser. Nenhuma instalação ou fonte adicional é necessária.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Por que algumas letras diferentes não aparecem corretamente?</h3>
+        <p>Alguns aplicativos ou sistemas mais antigos podem não suportar certos caracteres Unicode, fazendo com que apareçam como quadrados ou símbolos genéricos.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Gerador de Fontes Diferentes &middot; Ferramenta gratuita e independente</p>
+  </footer>
+
+</div>
+
+<div id="toast">Copiado!</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var input = document.getElementById('textInput');
+  var resultsEl = document.getElementById('results');
+  var charCount = document.getElementById('charCount');
+  var toast = document.getElementById('toast');
+
+  var BASE_UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var BASE_LOWER = "abcdefghijklmnopqrstuvwxyz";
+  var BASE_DIGIT = "0123456789";
+
+  function buildMap(upperArr, lowerArr, digitArr) {
+    var map = {};
+    for (var i = 0; i < BASE_UPPER.length; i++) {
+      if (upperArr && upperArr[i]) map[BASE_UPPER[i]] = upperArr[i];
+    }
+    for (var j = 0; j < BASE_LOWER.length; j++) {
+      if (lowerArr && lowerArr[j]) map[BASE_LOWER[j]] = lowerArr[j];
+    }
+    if (digitArr) {
+      for (var k = 0; k < BASE_DIGIT.length; k++) {
+        if (digitArr[k]) map[BASE_DIGIT[k]] = digitArr[k];
+      }
+    }
+    return map;
+  }
+
+  // ---- Verified Unicode style arrays (generated via code-point arithmetic,
+  // cross-checked for length 26 / 10, astral-safe) ----
+var boldUpper = ["\u{1D400}","\u{1D401}","\u{1D402}","\u{1D403}","\u{1D404}","\u{1D405}","\u{1D406}","\u{1D407}","\u{1D408}","\u{1D409}","\u{1D40A}","\u{1D40B}","\u{1D40C}","\u{1D40D}","\u{1D40E}","\u{1D40F}","\u{1D410}","\u{1D411}","\u{1D412}","\u{1D413}","\u{1D414}","\u{1D415}","\u{1D416}","\u{1D417}","\u{1D418}","\u{1D419}"];
+var boldLower = ["\u{1D41A}","\u{1D41B}","\u{1D41C}","\u{1D41D}","\u{1D41E}","\u{1D41F}","\u{1D420}","\u{1D421}","\u{1D422}","\u{1D423}","\u{1D424}","\u{1D425}","\u{1D426}","\u{1D427}","\u{1D428}","\u{1D429}","\u{1D42A}","\u{1D42B}","\u{1D42C}","\u{1D42D}","\u{1D42E}","\u{1D42F}","\u{1D430}","\u{1D431}","\u{1D432}","\u{1D433}"];
+var boldDigit = ["\u{1D7CE}","\u{1D7CF}","\u{1D7D0}","\u{1D7D1}","\u{1D7D2}","\u{1D7D3}","\u{1D7D4}","\u{1D7D5}","\u{1D7D6}","\u{1D7D7}"];
+var italicUpper = ["\u{1D434}","\u{1D435}","\u{1D436}","\u{1D437}","\u{1D438}","\u{1D439}","\u{1D43A}","\u{1D43B}","\u{1D43C}","\u{1D43D}","\u{1D43E}","\u{1D43F}","\u{1D440}","\u{1D441}","\u{1D442}","\u{1D443}","\u{1D444}","\u{1D445}","\u{1D446}","\u{1D447}","\u{1D448}","\u{1D449}","\u{1D44A}","\u{1D44B}","\u{1D44C}","\u{1D44D}"];
+var italicLower = ["\u{1D44E}","\u{1D44F}","\u{1D450}","\u{1D451}","\u{1D452}","\u{1D453}","\u{1D454}","\u{210E}","\u{1D456}","\u{1D457}","\u{1D458}","\u{1D459}","\u{1D45A}","\u{1D45B}","\u{1D45C}","\u{1D45D}","\u{1D45E}","\u{1D45F}","\u{1D460}","\u{1D461}","\u{1D462}","\u{1D463}","\u{1D464}","\u{1D465}","\u{1D466}","\u{1D467}"];
+var boldItalicUpper = ["\u{1D468}","\u{1D469}","\u{1D46A}","\u{1D46B}","\u{1D46C}","\u{1D46D}","\u{1D46E}","\u{1D46F}","\u{1D470}","\u{1D471}","\u{1D472}","\u{1D473}","\u{1D474}","\u{1D475}","\u{1D476}","\u{1D477}","\u{1D478}","\u{1D479}","\u{1D47A}","\u{1D47B}","\u{1D47C}","\u{1D47D}","\u{1D47E}","\u{1D47F}","\u{1D480}","\u{1D481}"];
+var boldItalicLower = ["\u{1D482}","\u{1D483}","\u{1D484}","\u{1D485}","\u{1D486}","\u{1D487}","\u{1D488}","\u{1D489}","\u{1D48A}","\u{1D48B}","\u{1D48C}","\u{1D48D}","\u{1D48E}","\u{1D48F}","\u{1D490}","\u{1D491}","\u{1D492}","\u{1D493}","\u{1D494}","\u{1D495}","\u{1D496}","\u{1D497}","\u{1D498}","\u{1D499}","\u{1D49A}","\u{1D49B}"];
+var scriptUpper = ["\u{1D49C}","\u{212C}","\u{1D49E}","\u{1D49F}","\u{2130}","\u{2131}","\u{1D4A2}","\u{210B}","\u{2110}","\u{1D4A5}","\u{1D4A6}","\u{2112}","\u{2133}","\u{1D4A9}","\u{1D4AA}","\u{1D4AB}","\u{1D4AC}","\u{211B}","\u{1D4AE}","\u{1D4AF}","\u{1D4B0}","\u{1D4B1}","\u{1D4B2}","\u{1D4B3}","\u{1D4B4}","\u{1D4B5}"];
+var scriptLower = ["\u{1D4B6}","\u{1D4B7}","\u{1D4B8}","\u{1D4B9}","\u{212F}","\u{1D4BB}","\u{210A}","\u{1D4BD}","\u{1D4BE}","\u{1D4BF}","\u{1D4C0}","\u{1D4C1}","\u{1D4C2}","\u{1D4C3}","\u{2134}","\u{1D4C5}","\u{1D4C6}","\u{1D4C7}","\u{1D4C8}","\u{1D4C9}","\u{1D4CA}","\u{1D4CB}","\u{1D4CC}","\u{1D4CD}","\u{1D4CE}","\u{1D4CF}"];
+var boldScriptUpper = ["\u{1D4D0}","\u{1D4D1}","\u{1D4D2}","\u{1D4D3}","\u{1D4D4}","\u{1D4D5}","\u{1D4D6}","\u{1D4D7}","\u{1D4D8}","\u{1D4D9}","\u{1D4DA}","\u{1D4DB}","\u{1D4DC}","\u{1D4DD}","\u{1D4DE}","\u{1D4DF}","\u{1D4E0}","\u{1D4E1}","\u{1D4E2}","\u{1D4E3}","\u{1D4E4}","\u{1D4E5}","\u{1D4E6}","\u{1D4E7}","\u{1D4E8}","\u{1D4E9}"];
+var boldScriptLower = ["\u{1D4EA}","\u{1D4EB}","\u{1D4EC}","\u{1D4ED}","\u{1D4EE}","\u{1D4EF}","\u{1D4F0}","\u{1D4F1}","\u{1D4F2}","\u{1D4F3}","\u{1D4F4}","\u{1D4F5}","\u{1D4F6}","\u{1D4F7}","\u{1D4F8}","\u{1D4F9}","\u{1D4FA}","\u{1D4FB}","\u{1D4FC}","\u{1D4FD}","\u{1D4FE}","\u{1D4FF}","\u{1D500}","\u{1D501}","\u{1D502}","\u{1D503}"];
+var frakturUpper = ["\u{1D504}","\u{1D505}","\u{212D}","\u{1D507}","\u{1D508}","\u{1D509}","\u{1D50A}","\u{210C}","\u{2111}","\u{1D50D}","\u{1D50E}","\u{1D50F}","\u{1D510}","\u{1D511}","\u{1D512}","\u{1D513}","\u{1D514}","\u{211C}","\u{1D516}","\u{1D517}","\u{1D518}","\u{1D519}","\u{1D51A}","\u{1D51B}","\u{1D51C}","\u{2128}"];
+var frakturLower = ["\u{1D51E}","\u{1D51F}","\u{1D520}","\u{1D521}","\u{1D522}","\u{1D523}","\u{1D524}","\u{1D525}","\u{1D526}","\u{1D527}","\u{1D528}","\u{1D529}","\u{1D52A}","\u{1D52B}","\u{1D52C}","\u{1D52D}","\u{1D52E}","\u{1D52F}","\u{1D530}","\u{1D531}","\u{1D532}","\u{1D533}","\u{1D534}","\u{1D535}","\u{1D536}","\u{1D537}"];
+var boldFrakturUpper = ["\u{1D56C}","\u{1D56D}","\u{1D56E}","\u{1D56F}","\u{1D570}","\u{1D571}","\u{1D572}","\u{1D573}","\u{1D574}","\u{1D575}","\u{1D576}","\u{1D577}","\u{1D578}","\u{1D579}","\u{1D57A}","\u{1D57B}","\u{1D57C}","\u{1D57D}","\u{1D57E}","\u{1D57F}","\u{1D580}","\u{1D581}","\u{1D582}","\u{1D583}","\u{1D584}","\u{1D585}"];
+var boldFrakturLower = ["\u{1D586}","\u{1D587}","\u{1D588}","\u{1D589}","\u{1D58A}","\u{1D58B}","\u{1D58C}","\u{1D58D}","\u{1D58E}","\u{1D58F}","\u{1D590}","\u{1D591}","\u{1D592}","\u{1D593}","\u{1D594}","\u{1D595}","\u{1D596}","\u{1D597}","\u{1D598}","\u{1D599}","\u{1D59A}","\u{1D59B}","\u{1D59C}","\u{1D59D}","\u{1D59E}","\u{1D59F}"];
+var doubleUpper = ["\u{1D538}","\u{1D539}","\u{2102}","\u{1D53B}","\u{1D53C}","\u{1D53D}","\u{1D53E}","\u{210D}","\u{1D540}","\u{1D541}","\u{1D542}","\u{1D543}","\u{1D544}","\u{2115}","\u{1D546}","\u{2119}","\u{211A}","\u{211D}","\u{1D54A}","\u{1D54B}","\u{1D54C}","\u{1D54D}","\u{1D54E}","\u{1D54F}","\u{1D550}","\u{2124}"];
+var doubleLower = ["\u{1D552}","\u{1D553}","\u{1D554}","\u{1D555}","\u{1D556}","\u{1D557}","\u{1D558}","\u{1D559}","\u{1D55A}","\u{1D55B}","\u{1D55C}","\u{1D55D}","\u{1D55E}","\u{1D55F}","\u{1D560}","\u{1D561}","\u{1D562}","\u{1D563}","\u{1D564}","\u{1D565}","\u{1D566}","\u{1D567}","\u{1D568}","\u{1D569}","\u{1D56A}","\u{1D56B}"];
+var doubleDigit = ["\u{1D7D8}","\u{1D7D9}","\u{1D7DA}","\u{1D7DB}","\u{1D7DC}","\u{1D7DD}","\u{1D7DE}","\u{1D7DF}","\u{1D7E0}","\u{1D7E1}"];
+var monoUpper = ["\u{1D670}","\u{1D671}","\u{1D672}","\u{1D673}","\u{1D674}","\u{1D675}","\u{1D676}","\u{1D677}","\u{1D678}","\u{1D679}","\u{1D67A}","\u{1D67B}","\u{1D67C}","\u{1D67D}","\u{1D67E}","\u{1D67F}","\u{1D680}","\u{1D681}","\u{1D682}","\u{1D683}","\u{1D684}","\u{1D685}","\u{1D686}","\u{1D687}","\u{1D688}","\u{1D689}"];
+var monoLower = ["\u{1D68A}","\u{1D68B}","\u{1D68C}","\u{1D68D}","\u{1D68E}","\u{1D68F}","\u{1D690}","\u{1D691}","\u{1D692}","\u{1D693}","\u{1D694}","\u{1D695}","\u{1D696}","\u{1D697}","\u{1D698}","\u{1D699}","\u{1D69A}","\u{1D69B}","\u{1D69C}","\u{1D69D}","\u{1D69E}","\u{1D69F}","\u{1D6A0}","\u{1D6A1}","\u{1D6A2}","\u{1D6A3}"];
+var monoDigit = ["\u{1D7F6}","\u{1D7F7}","\u{1D7F8}","\u{1D7F9}","\u{1D7FA}","\u{1D7FB}","\u{1D7FC}","\u{1D7FD}","\u{1D7FE}","\u{1D7FF}"];
+var smallCapsLower = ["\u{1D00}","\u{299}","\u{1D04}","\u{1D05}","\u{1D07}","\u{A730}","\u{262}","\u{29C}","\u{26A}","\u{1D0A}","\u{1D0B}","\u{29F}","\u{1D0D}","\u{274}","\u{1D0F}","\u{1D18}","\u{1EB}","\u{280}","\u{A731}","\u{1D1B}","\u{1D1C}","\u{1D20}","\u{1D21}","\u{2E3}","\u{28F}","\u{1D22}"];
+var circledUpper = ["\u{24B6}","\u{24B7}","\u{24B8}","\u{24B9}","\u{24BA}","\u{24BB}","\u{24BC}","\u{24BD}","\u{24BE}","\u{24BF}","\u{24C0}","\u{24C1}","\u{24C2}","\u{24C3}","\u{24C4}","\u{24C5}","\u{24C6}","\u{24C7}","\u{24C8}","\u{24C9}","\u{24CA}","\u{24CB}","\u{24CC}","\u{24CD}","\u{24CE}","\u{24CF}"];
+var circledLower = ["\u{24D0}","\u{24D1}","\u{24D2}","\u{24D3}","\u{24D4}","\u{24D5}","\u{24D6}","\u{24D7}","\u{24D8}","\u{24D9}","\u{24DA}","\u{24DB}","\u{24DC}","\u{24DD}","\u{24DE}","\u{24DF}","\u{24E0}","\u{24E1}","\u{24E2}","\u{24E3}","\u{24E4}","\u{24E5}","\u{24E6}","\u{24E7}","\u{24E8}","\u{24E9}"];
+var circledDigit = ["\u{24EA}","\u{2460}","\u{2461}","\u{2462}","\u{2463}","\u{2464}","\u{2465}","\u{2466}","\u{2467}","\u{2468}"];
+var squaredUpper = ["\u{1F130}","\u{1F131}","\u{1F132}","\u{1F133}","\u{1F134}","\u{1F135}","\u{1F136}","\u{1F137}","\u{1F138}","\u{1F139}","\u{1F13A}","\u{1F13B}","\u{1F13C}","\u{1F13D}","\u{1F13E}","\u{1F13F}","\u{1F140}","\u{1F141}","\u{1F142}","\u{1F143}","\u{1F144}","\u{1F145}","\u{1F146}","\u{1F147}","\u{1F148}","\u{1F149}"];
+var bubbleUpper = ["\u{1F150}","\u{1F151}","\u{1F152}","\u{1F153}","\u{1F154}","\u{1F155}","\u{1F156}","\u{1F157}","\u{1F158}","\u{1F159}","\u{1F15A}","\u{1F15B}","\u{1F15C}","\u{1F15D}","\u{1F15E}","\u{1F15F}","\u{1F160}","\u{1F161}","\u{1F162}","\u{1F163}","\u{1F164}","\u{1F165}","\u{1F166}","\u{1F167}","\u{1F168}","\u{1F169}"];
+
+  // Maps used by the generator. Styles with no lowercase/digit Unicode block
+  // available (squared, bubble) fall back to using the uppercase glyphs for
+  // lowercase input too, which is the conventional approach these tools use.
+  var maps = {
+    bold: buildMap(boldUpper, boldLower, boldDigit),
+    italic: buildMap(italicUpper, italicLower, null),
+    boldItalic: buildMap(boldItalicUpper, boldItalicLower, null),
+    script: buildMap(scriptUpper, scriptLower, null),
+    boldScript: buildMap(boldScriptUpper, boldScriptLower, null),
+    smallCaps: buildMap(BASE_UPPER.split(''), smallCapsLower, null),
+    circled: buildMap(circledUpper, circledLower, circledDigit),
+    squared: buildMap(squaredUpper, squaredUpper, null),
+    bubble: buildMap(bubbleUpper, bubbleUpper, null),
+    monospace: buildMap(monoUpper, monoLower, monoDigit),
+    fraktur: buildMap(frakturUpper, frakturLower, null),
+    boldFraktur: buildMap(boldFrakturUpper, boldFrakturLower, null),
+    doubleStruck: buildMap(doubleUpper, doubleLower, doubleDigit)
+  };
+
+  var styleDefs = [
+    { key: "bold", label: "Negrito" },
+    { key: "italic", label: "Itálico" },
+    { key: "boldItalic", label: "Negrito Itálico" },
+    { key: "script", label: "Cursiva" },
+    { key: "boldScript", label: "Cursiva Negrito" },
+    { key: "smallCaps", label: "Versalete" },
+    { key: "circled", label: "Circulado" },
+    { key: "squared", label: "Quadrado" },
+    { key: "bubble", label: "Bolha" },
+    { key: "monospace", label: "Monoespaçado" },
+    { key: "fraktur", label: "Fraktur" },
+    { key: "boldFraktur", label: "Fraktur Negrito" },
+    { key: "doubleStruck", label: "Duplo Traço" },
+    { key: "underline", label: "Sublinhado" },
+    { key: "strikethrough", label: "Tachado" }
+  ];
+
+  // Code-point-safe mapping (handles accented Portuguese characters, emoji,
+  // and astral-plane output gracefully by leaving unmapped characters as-is)
+  function applyMap(text, map) {
+    var chars = Array.from(text);
+    var out = "";
+    for (var i = 0; i < chars.length; i++) {
+      var ch = chars[i];
+      out += (map[ch] !== undefined ? map[ch] : ch);
+    }
+    return out;
+  }
+
+  function applyCombining(text, mark) {
+    var chars = Array.from(text);
+    var out = "";
+    for (var i = 0; i < chars.length; i++) {
+      out += chars[i] + (chars[i] === ' ' ? '' : mark);
+    }
+    return out;
+  }
+
+  function generateStyle(key, text) {
+    switch (key) {
+      case "underline":
+        return applyCombining(text, "\u0332");
+      case "strikethrough":
+        return applyCombining(text, "\u0336");
+      default:
+        return applyMap(text, maps[key]);
+    }
+  }
+
+  function escapeHtml(str) {
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  // Use a data attribute registry instead of encodeURIComponent (which can
+  // throw on lone surrogates) — safer against any unexpected input.
+  var copyRegistry = {};
+  var copyCounter = 0;
+
+  function render() {
+    var raw = input.value;
+    charCount.textContent = Array.from(raw).length + " / 200 caracteres";
+
+    if (!raw.trim()) {
+      resultsEl.innerHTML = '<p style="color:var(--text-dim);text-align:center;padding:20px;">Digite algo acima para ver os estilos gerados.</p>';
+      return;
+    }
+
+    copyRegistry = {};
+    copyCounter = 0;
+
+    var html = "";
+    for (var i = 0; i < styleDefs.length; i++) {
+      var def = styleDefs[i];
+      var output = generateStyle(def.key, raw);
+      var id = "c" + (copyCounter++);
+      copyRegistry[id] = output;
+      html +=
+        '<div class="style-item">' +
+          '<div class="style-info">' +
+            '<span class="style-label">' + def.label + '</span>' +
+            '<span class="style-output">' + escapeHtml(output) + '</span>' +
+          '</div>' +
+          '<button class="copy-btn" type="button" data-copy-id="' + id + '">Copiar</button>' +
+        '</div>';
+    }
+    resultsEl.innerHTML = html;
+  }
+
+  var toastTimer = null;
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.add('show');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toast.classList.remove('show');
+    }, 1600);
+  }
+
+  function copyText(text, btn) {
+    function done(success) {
+      if (success) {
+        showToast("Copiado!");
+        var original = btn.textContent;
+        btn.textContent = "✓ Copiado";
+        btn.classList.add('copied');
+        setTimeout(function () {
+          btn.textContent = original;
+          btn.classList.remove('copied');
+        }, 1400);
+      } else {
+        showToast("Não foi possível copiar");
+      }
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        done(true);
+      }, function () {
+        fallbackCopy(text, done);
+      });
+    } else {
+      fallbackCopy(text, done);
+    }
+  }
+
+  function fallbackCopy(text, cb) {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.left = '-9999px';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      var ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      cb(ok);
+    } catch (e) {
+      cb(false);
+    }
+  }
+
+  resultsEl.addEventListener('click', function (e) {
+    var btn = e.target.closest('.copy-btn');
+    if (!btn) return;
+    var id = btn.getAttribute('data-copy-id');
+    var text = copyRegistry[id];
+    if (text !== undefined) copyText(text, btn);
+  });
+
+  input.addEventListener('input', render);
+
+  render();
+})();
+</script>
+
+</body>
+</html>
